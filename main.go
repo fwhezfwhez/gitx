@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"gitx/core"
+	"github.com/fwhezfwhez/gitx/core"
 	"os"
 	"os/exec"
 )
 
-var  Version = "gitx version v1.0.0"
+var Version = "gitx version v1.0.0"
 
 func main() {
 	//  os.Args = []string{"sudo","gitx", "--version"}
