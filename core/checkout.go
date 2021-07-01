@@ -11,7 +11,6 @@ func HandleCheckout(c *Context) {
 		return
 	}
 
-	// 禁止merge dev
 	b := c.Index(2)
 	currentBranch := GetCurrentBranchName()
 
