@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d49f01-60c4-4d5e-9f65-fd3aee5405cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../1111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../1111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
@@ -194,9 +192,6 @@
       <change beforePath="$PROJECT_DIR$/../github.com/pkg/errors" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/pkg/errors" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/satori/go.uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/satori/go.uuid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/xormplus/xorm" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/xormplus/xorm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/client/single/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/client/single/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/config/const/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/config/const/const.go" afterDir="false" />
@@ -1168,7 +1163,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24093817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
