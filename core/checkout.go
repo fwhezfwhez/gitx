@@ -14,9 +14,11 @@ func HandleCheckout(c *Context) {
 	// 禁止merge dev
 	b := c.Index(2)
 	currentBranch := GetCurrentBranchName()
-	if strings.HasPrefix(currentBranch, "dev") && b == "-b" {
+
+	newb := c.Index(3)
+	if strings.HasPrefix(currentBranch, "dev") && b == "-b" && !strings.HasPrefix(newb, "dev") {
 		c.Abort()
-		fmt.Printf("> %s\n %s\n", c.RawCommand(), "禁止在祖先分支为dev的场景下，新建分支。会造成分支污染")
+		fmt.Printf("> %s\n %s\n", c.RawCommand(), "禁止在祖先分支为dev的场景下，新建功能分支。会造成分支污染")
 		return
 	}
 }
