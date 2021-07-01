@@ -11,6 +11,11 @@ func TestGetCurrentBranchName(t *testing.T) {
 	fmt.Println(rs)
 }
 
+func TestGetGitCommandPath(t *testing.T) {
+	path := GetGitCommandPath()
+
+	fmt.Println(path)
+}
 
 func TestGetCurrentHash(t *testing.T) {
 	rs := GetCurrentHash()

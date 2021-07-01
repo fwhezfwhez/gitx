@@ -17,7 +17,7 @@ func main() {
 	// fmt.Println(core.Debug(ctx))
 
 	f := func() {
-		cmd := exec.Command("git", args[1:]...)
+		cmd := exec.Command(core.GetGitCommandPath(), args[1:]...)
 
 		rs, e := cmd.CombinedOutput()
 		if e != nil {
