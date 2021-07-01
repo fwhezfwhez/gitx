@@ -2,19 +2,36 @@ package main
 
 import (
 	"fmt"
+	"gitx/core"
 	"os"
 	"os/exec"
 )
 
 func main() {
-	args := os.Args
+	os.Args = []string{"gitx", "merge", "dev"}
 
-	cmd := exec.Command("git", args[1:]...)
+	args := core.GetRealArgs(os.Args)
 
-	rs, e := cmd.Output()
-	if e != nil {
-		panic(e)
+	ctx := core.NewContext(args)
+
+	fmt.Println(core.Debug(ctx))
+
+	f := func() {
+		cmd := exec.Command("git", args[1:]...)
+
+		rs, e := cmd.CombinedOutput()
+		if e != nil {
+			// panic(e)
+		}
+
+		fmt.Println(string(rs))
+		return
 	}
 
-	fmt.Println(string(rs))
+	wrapf := core.WrapFuncWithContext(f, ctx)
+
+	// 切面操作merge
+	wrapf.Use(core.HandleMerge)
+
+	wrapf.Handle()
 }
