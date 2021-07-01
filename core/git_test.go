@@ -10,3 +10,10 @@ func TestGetCurrentBranchName(t *testing.T) {
 
 	fmt.Println(rs)
 }
+
+
+func TestGetCurrentHash(t *testing.T) {
+	rs := GetCurrentHash()
+
+	fmt.Println(rs)
+}
