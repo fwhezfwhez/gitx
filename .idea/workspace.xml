@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d49f01-60c4-4d5e-9f65-fd3aee5405cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../1111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../1111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
@@ -192,10 +195,6 @@
       <change beforePath="$PROJECT_DIR$/../github.com/pkg/errors" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/pkg/errors" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/satori/go.uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/satori/go.uuid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/xormplus/xorm" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/xormplus/xorm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/git.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/git.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/git_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/git_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/client/single/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/client/single/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../go-chat/config/const/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-chat/config/const/const.go" afterDir="false" />
@@ -593,7 +592,6 @@
       <change beforePath="$PROJECT_DIR$/../helloworld_test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld_test/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../irr/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irr/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../irr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irr/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irr/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/crack.go" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/crack.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/crack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/crack_test.go" afterDir="false" />
@@ -837,6 +835,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="go" value="26" />
           <entry key="md" value="2" />
           <entry key="sum" value="1" />
@@ -845,11 +844,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Go" value="26" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="8" />
           <entry key="go" value="3739" />
           <entry key="md" value="243" />
         </counts>
@@ -857,7 +857,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Go" value="3739" />
-          <entry key="PLAIN_TEXT" value="243" />
+          <entry key="PLAIN_TEXT" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -869,14 +869,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="229">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#14#61#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -971,15 +980,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/go1.13.15/src/os/exec/exec.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="337" column="14" selection-start-line="337" selection-start-column="14" selection-end-line="337" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -1019,6 +1019,7 @@
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/core/git.go" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1351,11 +1352,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="229">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#14#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
