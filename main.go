@@ -7,7 +7,7 @@ import (
 	"os/exec"
 )
 
-const Version = "gitx v1.0.0"
+var  Version = "gitx version v1.0.0"
 
 func main() {
 	 os.Args = []string{"sudo","gitx", "--version"}
