@@ -51,3 +51,13 @@ func GetCmdOutPut(command string) (string) {
 	}
 	return string(rs)
 }
+
+func Trim(s string) string {
+
+	var rs string
+	rs = strings.TrimSpace(s)
+	rs = strings.Trim(rs, "\n")
+	rs = strings.Trim(rs, "\t")
+
+	return rs
+}

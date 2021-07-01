@@ -7,8 +7,10 @@ import (
 	"os/exec"
 )
 
+const Version = "gitx v1.0.0"
+
 func main() {
-	// os.Args = []string{"sudo","gitx", "merge", "dev"}
+	 os.Args = []string{"sudo","gitx", "--version"}
 
 	args := core.GetRealArgs(os.Args)
 
@@ -22,6 +24,12 @@ func main() {
 		rs, e := cmd.CombinedOutput()
 		if e != nil {
 			// panic(e)
+		}
+
+		if args[1] == "--version" || args[1] == "version" {
+			fmt.Println(Version)
+			fmt.Println(string(rs))
+			return
 		}
 
 		fmt.Println(string(rs))
