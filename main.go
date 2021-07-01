@@ -10,7 +10,7 @@ import (
 var  Version = "gitx version v1.0.0"
 
 func main() {
-	 os.Args = []string{"sudo","gitx", "--version"}
+	//  os.Args = []string{"sudo","gitx", "--version"}
 
 	args := core.GetRealArgs(os.Args)
 
