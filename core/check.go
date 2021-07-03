@@ -4,7 +4,8 @@ import "fmt"
 
 func Check(c *Context) {
 
-	if c.Index(1) == "version" || c.Index(1) == "--version" {
+	if c.Index(1) == "version" ||
+		c.Index(1) == "--version" || c.Index(1) == "clone" || c.Index(1)=="init"{
 		c.Next()
 		return
 	}
