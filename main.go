@@ -44,6 +44,8 @@ func main() {
 	wrapf.Use(core.HandleBranch)
 	// 切面操作checkout
 	wrapf.Use(core.HandleCheckout)
+	// 切面操作add
+	core.AddRouter(wrapf)
 
 	wrapf.Handle()
 }
