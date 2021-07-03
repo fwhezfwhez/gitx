@@ -53,3 +53,9 @@ The file will have its original line endings in your working directory
 > git branch -v
 未在当前目录找到.git目录，请确认是合法git项目，或使用git init 初始化
 ```
+
+- 执行pull命令时，只允许同名分支发起pull
+```
+> git pull origin kkk
+禁止跨分支pull,只允许同名分支发起pull
+```
