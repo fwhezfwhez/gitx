@@ -12,13 +12,13 @@ import (
 // 获取当前的分支名
 func GetCurrentBranchName() string {
 	rs := GetCmdOutPut("git rev-parse --abbrev-ref HEAD")
-	return rs
+	return Trim(rs)
 }
 
 // 获取当前hash
 func GetCurrentHash() string {
 	rs := GetCmdOutPut("git rev-parse HEAD")
-	return rs
+	return Trim(rs)
 }
 
 // 获取git命令

@@ -7,10 +7,10 @@ import (
 	"os/exec"
 )
 
-var Version = "gitx version v1.1.0"
+var Version = "gitx version v1.2.0"
 
 func main() {
-	//  os.Args = []string{"sudo","gitx", "--version"}
+	//  os.Args = strings.Split("gitx pull origin master", " ")
 
 	args := core.GetRealArgs(os.Args)
 
@@ -49,6 +49,8 @@ func main() {
 	wrapf.Use(core.HandleCheckout)
 	// 切面操作add
 	core.AddRouter(wrapf)
+	// 切面操作pull
+	core.PullRouter(wrapf)
 
 	wrapf.Handle()
 }
