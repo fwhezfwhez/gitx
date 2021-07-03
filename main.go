@@ -7,7 +7,7 @@ import (
 	"os/exec"
 )
 
-var Version = "gitx version v1.0.0"
+var Version = "gitx version v1.1.0"
 
 func main() {
 	//  os.Args = []string{"sudo","gitx", "--version"}
@@ -37,6 +37,9 @@ func main() {
 	}
 
 	wrapf := core.WrapFuncWithContext(f, ctx)
+
+	// 预检查
+	wrapf.Use(core.Check)
 
 	// 切面操作merge
 	wrapf.Use(core.HandleMerge)

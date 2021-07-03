@@ -75,3 +75,25 @@ func IsCftTypeBranch() bool {
 	}
 	return false
 }
+
+func IsCorrectGitDir() bool {
+	dir, e := os.Getwd()
+	if e != nil {
+		panic(e)
+	}
+	gitdir := path.Join(dir, ".git")
+	info, e := os.Stat(gitdir)
+	if os.IsNotExist(e) {
+		return false
+	}
+	if e != nil {
+		panic(e)
+	}
+
+	if info.IsDir() == true {
+		return true
+	}
+
+	return false
+
+}
